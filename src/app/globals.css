@@ -1,3 +1,166 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.page-event {
+  background-color: #212121;
+  padding-bottom: 40px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.cover {
+  background-color: rgb(54, 53, 58);
+  height: 360px;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* .cover .heading { */
+/*   font-family: "Telefon Black"; */
+/*   font-size: 243px; */
+/*   letter-spacing: 0.08em; */
+/*   text-transform: uppercase; */
+/*   text-align: center; */
+/*   color: #ccc; */
+/*   transition: font-size 0.3s; */
+/* } */
+
+/* .cover .heading::first-letter { */
+/*   color: #db2d8e; */
+/* } */
+.upcoming-sec {
+  padding: 5vh 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center; /* Horizontally center the children */
+  align-items: center; /* Vertically center the children */
+}
+
+.upcoming-sec .heading {
+  @apply text-2xl text-white;
+}
+
+.upcoming-event-list {
+  @apply text-gray-300;
+  padding: 5vh;
+}
+
+.upcoming-event-list .event-block {
+  padding: 5vh 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.upcoming-event-list .event-block .sec-1,
+.upcoming-event-list .event-block .sec-2 {
+  @apply pb-12;
+}
+
+.upcoming-event-list .event-block .sec-1 .month {
+  @apply text-uppercase text-purple-600 text-2xl;
+}
+
+.upcoming-event-list .event-block .sec-1 .month-date-devider {
+  @apply my-4;
+}
+
+.upcoming-event-list .event-block .sec-1 .date {
+  @apply text-6xl font-bold;
+}
+
+.upcoming-event-list .event-block .sec-1 .title {
+  @apply pl-4 align-top text-2xl;
+}
+
+.upcoming-event-list .event-block .sec-2 img {
+  @apply w-full;
+}
+
+.upcoming-event-list .event-block .sec-3 .title {
+  @apply text-2xl pb-8;
+}
+
+.upcoming-event-list .event-block .sec-3 .venue i {
+  @apply text-purple-600 pl-1 pr-4;
+}
+
+.upcoming-event-list .event-block .sec-3 .venue .dim-color a {
+  @apply text-gray-400;
+}
+
+.upcoming-event-list .event-block .sec-3 .time {
+  @apply pb-12;
+}
+
+.upcoming-event-list .event-block .sec-3 .time i {
+  @apply text-purple-600 pr-4;
+}
+
+.upcoming-event-list .event-block .sec-3 .time .dim-color {
+  @apply text-gray-400;
+}
+
+.upcoming-event-list .event-block .sec-3 .group-of-btn {
+  @apply pt-12;
+}
+
+.upcoming-event-list .event-block .sec-3 .group-of-btn .book-ticket {
+  @apply bg-teal-500 text-white mb-4;
+}
+
+.page-heading {
+  @apply text-uppercase text-white pb-4;
+}
+
+.page-heading::first-letter {
+  color: #db2d8e;
+}
+
+@media (min-width: 992px) {
+  .upcoming-event-list .event-block .sec-1 .title {
+    @apply hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  .cover .heading {
+    @apply text-6xl pt-28;
+  }
+
+  .upcoming-event-list .event-block .sec-3 .title {
+    @apply hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  .cover {
+    @apply h-64;
+  }
+
+  .cover .heading {
+    @apply text-5xl pt-32;
+  }
+}
+
+@media (max-width: 575px) {
+  .cover .heading {
+    @apply text-4xl;
+  }
+
+  .upcoming-event-list .event-block .sec-1 .month {
+    @apply text-xs;
+  }
+
+  .upcoming-event-list .event-block .sec-1 .date {
+    @apply text-2xl;
+  }
+
+  .upcoming-event-list .event-block .sec-1 .title {
+    @apply text-base;
+  }
+}

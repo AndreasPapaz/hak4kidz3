@@ -4,8 +4,7 @@ import { Navbar, Footer } from "@/components";
 // sections
 import Hero from "./hero";
 import Content from "./content";
-import Comments from "./comments";
-import BlogPosts from "./blog-posts";
+import UpcomingEvents from "@/components/UpcomingEvents/UpcomingEvents";
 
 export default function Campaign() {
   return (
@@ -13,9 +12,7 @@ export default function Campaign() {
       <Navbar />
       <Hero />
       <Content />
-      <Comments />
-      <BlogPosts />
-      <Footer />
+      <UpcomingEvents />
     </>
   );
 }
