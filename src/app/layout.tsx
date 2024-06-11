@@ -28,12 +28,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en" className={`${MITRE.variable} font-sans`}>
       <body className={MITRE.variable}>
+        {/* @ts-ignore */}
         <Layout>{children}</Layout>
       </body>
     </html>

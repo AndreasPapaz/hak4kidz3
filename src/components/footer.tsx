@@ -1,3 +1,5 @@
+"use client";
+
 import { Typography } from "@material-tailwind/react";
 
 const LINKS = [
@@ -22,6 +24,7 @@ export function Footer() {
     <footer className="mt-10 px-8 pt-20">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
+          {/* @ts-ignore */}
           <Typography
             as="a"
             href="https://www.material-tailwind.com"
@@ -34,11 +37,13 @@ export function Footer() {
           <div className="grid grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
+                {/* @ts-ignore */}
                 <Typography variant="h6" color="blue-gray" className="mb-4">
                   {title}
                 </Typography>
                 {items.map((link) => (
                   <li key={link}>
+                    {/* @ts-ignore */}
                     <Typography
                       as="a"
                       href="#"
@@ -55,13 +60,16 @@ export function Footer() {
         </div>
         <div className="mt-16 flex flex-wrap items-end justify-center gap-y-4 gap-x-8 border-t border-blue-gray-50 py-6 md:justify-between">
           <div className="text-center md:text-start">
+            {/* @ts-ignore */}
             <Typography variant="h4" color="blue-gray" className="mb-2">
               The reward for getting on the stage is fame.
             </Typography>
+            {/* @ts-ignore */}
             <Typography className="font-normal !text-gray-700">
               The price of fame is you can&apos;t get off the stage.
             </Typography>
           </div>
+          {/* @ts-ignore */}
           <Typography
             color="gray"
             className="text-center font-normal !text-gray-700"

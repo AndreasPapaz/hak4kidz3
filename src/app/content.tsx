@@ -8,15 +8,15 @@ export function Content() {
   return (
     <section className="py-12 px-8">
       <div className="mx-auto max-w-screen-md">
-        // @ts-ignore
+        {/* @ts-ignore */}
         <Typography color="blue" variant="h6">
           Please take a moment to read our Code of Conduct.
         </Typography>
-        // @ts-ignore
+        {/* @ts-ignore */}
         <Typography variant="h2" color="blue-gray" className="mt-8 mb-6">
           Online Education
         </Typography>
-        // @ts-ignore
+        {/* @ts-ignore */}
         <Typography className="my-10 font-normal !text-gray-500">
           We are thrilled to announce our new online learning center called
           Hak4Kidz Academy or H4KAcad for short. This platform is to provide
