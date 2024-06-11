@@ -2,14 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
-import TerminalCard from "@/components/TerminalCard";
+import { Typography } from "@material-tailwind/react";
 
 export function Content() {
   return (

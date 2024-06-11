@@ -2,6 +2,7 @@
 
 import { Button } from "@material-tailwind/react";
 import React from "react";
+import Image from "next/image";
 
 const Event = ({ events }) => {
   return (
@@ -17,7 +18,12 @@ const Event = ({ events }) => {
               </div>
             </div>
             <div className="col-start-2 col-end-4 sec-2">
-              <img src={event.image} alt={event.title} />
+              <Image
+                src={event.image}
+                alt={event.title}
+                width={500}
+                height={500}
+              />
             </div>
             <div className="col-start-4 col-end-6 sec-3">
               <div className="title">{event.title}</div>
