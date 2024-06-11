@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
@@ -21,8 +19,8 @@ export function Content() {
           materials and deciding which to add to HAKAcad. We believe this
           program, which is under development, will be beneficial to the future
           of cybersecurity. To access H4KAcad, either click that link to your
-          left or 'Academy' on the navigation bar above. Once on the site,
-          follow the course categories until you find Byte Size.
+          left or &apos;Academy&apos; on the navigation bar above. Once on the
+          site, follow the course categories until you find Byte Size.
         </Typography>
         <Image
           width={768}
