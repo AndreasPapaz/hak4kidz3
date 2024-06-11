@@ -79,9 +79,8 @@ export function Navbar() {
           alt="Hak4Kidz"
         />
         <ul
-          className={`ml-10 hidden items-center gap-6 lg:flex ${
-            isScrolling ? "text-gray-900" : "text-white"
-          }`}
+          className={`ml-10 hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
+            }`}
         >
           {NAV_MENU.map((name) => (
             <NavItem key={name}>{name}</NavItem>
