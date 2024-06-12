@@ -27,13 +27,6 @@ export function Content() {
           left or &apos;Academy&apos; on the navigation bar above. Once on the
           site, follow the course categories until you find Byte Size.
         </Typography>
-        <Image
-          width={768}
-          height={500}
-          src="/image/event.jpeg"
-          alt="post"
-          className="mb-4 h-[28rem] w-full rounded-xl object-cover"
-        />
       </div>
     </section>
   );
